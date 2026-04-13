@@ -12,7 +12,7 @@ interface Props {
  * @param onChange - Função chamada com o novo valor ao digitar ou limpar
  * @param placeholder - Texto exibido quando o campo está vazio
  */
-export function SearchBar({ value, onChange, placeholder = 'Procurar Países…' }: Props) {
+export function SearchBar({ value, onChange, placeholder = 'Procurar Países… (digite o nome em inglês)' }: Props) {
   return (
     <div className={styles.wrap}>
       <svg className={styles.icon} viewBox="0 0 20 20" fill="none">
@@ -25,7 +25,7 @@ export function SearchBar({ value, onChange, placeholder = 'Procurar Países…'
         onChange={e => onChange(e.target.value)}
         placeholder={placeholder}
         className={styles.input}
-        aria-label="Procurar Países (digite o nome em inglês)"
+        aria-label="Procurar Países"
       />
       {value && (
         <button
