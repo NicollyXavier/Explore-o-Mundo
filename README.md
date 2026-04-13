@@ -122,5 +122,8 @@ A aplicação é totalmente responsiva:
 - **Tablet (640–1024px)**: grid de 3–4 colunas, sidebar reorganizada
 - **Mobile (<640px)**: grid de 2 colunas, layout empilhado
 
+## 🔗 Link de projeto no Vercel
+- https://explore-o-mundo.vercel.app/
+
 ## 👩‍💻 Autoria
 - **Nicolly Mayara Xavier Lima** - GitHub: @NicollyXavier
