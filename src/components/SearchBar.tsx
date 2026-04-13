@@ -25,7 +25,7 @@ export function SearchBar({ value, onChange, placeholder = 'Procurar Países…'
         onChange={e => onChange(e.target.value)}
         placeholder={placeholder}
         className={styles.input}
-        aria-label="Procurar Países"
+        aria-label="Procurar Países (digite o nome em inglês)"
       />
       {value && (
         <button
