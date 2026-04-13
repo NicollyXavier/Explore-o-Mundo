@@ -104,7 +104,7 @@ npm run preview  # Visualiza o build de produção localmente
 ## 🎨 Decisões Técnicas
 
 ### CSS Modules
-Escolhi CSS Modules em vez de uma biblioteca de UI (ex: Tailwind, MUI, Chakra) para manter o projeto sem dependências pesadas e demonstrar controle total sobre estilos com escopo automático.
+Escolhi CSS Modules em vez de uma biblioteca de UI (ex: Tailwind, MUI, Chakra) para manter o projeto sem dependências pesadas.
 
 ### Custom Hooks
 A lógica de dados foi separada em hooks reutilizáveis (`useCountries`, `useFilteredCountries`, `useSubregions`) para manter os componentes de página limpos e testáveis.
@@ -115,12 +115,12 @@ Ao buscar todos os países, passo o parâmetro `?fields=...` para a API receber 
 ### Filtragem no cliente
 Como todos os países são carregados de uma vez, a busca e o filtro por sub-região são feitos no cliente com `useMemo`, garantindo resposta instantânea sem requisições adicionais.
 
-### Design editorial
-O design segue uma estética editorial com tipografia serifada (Playfair Display) para títulos, paleta terrosa/quente, e animações CSS com `animation-delay` progressivo nos cards para uma entrada escalonada elegante.
-
 ## 📱 Responsividade
 
 A aplicação é totalmente responsiva:
 - **Desktop (>1024px)**: grid de 5–6 colunas, sidebar lateral na página de detalhes
 - **Tablet (640–1024px)**: grid de 3–4 colunas, sidebar reorganizada
 - **Mobile (<640px)**: grid de 2 colunas, layout empilhado
+
+## 👩‍💻 Autoria
+- **Nicolly Mayara Xavier Lima** - GitHub: @NicollyXavier
