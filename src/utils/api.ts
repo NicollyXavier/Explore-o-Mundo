@@ -1,7 +1,7 @@
 import type { Country } from '../types/country';
 
 /** URL base da API */
-const BASE_URL = 'https://files-03.restcountries.com/countries.00/legacy.json?fields=name,flags,population,region,subregion,capital,cca3';
+const BASE_URL = 'https://restcountries.com/v3.1';
 
 /**
  * Campos solicitados na listagem de países da home.
