@@ -1,3 +1,7 @@
 # .gitignore
 node_modules/
 dist/
+# variáveis de ambiente (contêm a chave da API)
+.env
+.env.local
+.env.*.local

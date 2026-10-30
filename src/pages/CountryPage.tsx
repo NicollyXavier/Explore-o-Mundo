@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import type { Country } from '../types/country';
-import { fetchCountryByCode, fetchCountriesByCodes, formatPopulation, formatArea } from '../utils/api';
+import { fetchCountryByCode, fetchBorderCountries, formatPopulation, formatArea } from '../utils/api';
 import styles from './CountryPage.module.css';
 
 /**
@@ -37,7 +37,7 @@ export function CountryPage() {
         setCountry(data);
         setLoading(false);
         if (data.borders?.length) {
-          const borders = await fetchCountriesByCodes(data.borders);
+          const borders = await fetchBorderCountries(data.cca3);
           setBorderCountries(borders);
         }
       })
